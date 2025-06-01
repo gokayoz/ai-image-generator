@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yapay Zeka Görsel Üretici</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <h1>Yapay Zeka Görsel Üretici</h1>
+    </header>
+    <main>
+        <section>
+            <form id="gorselFormu">
+                <label for="gorselGirdisi">İstediğiniz görsel hakkında bilgi giriniz:</label>
+                <input type="text" id="gorselGirdisi" name="gorsel" placeholder="Örnek: mars yüzeyinde meyve yiyen bir Erhan!" required>
+                <button type="submit">Görsel Oluştur</button>
+            </form>
+        </section>
+        <section>
+            <p id="olusturmaMesaji" style="display: none;">Görsel Oluşturuluyor...</p>
+            <figure>
+                <img id="gorselSonucu" alt="Üretilen görsel">
+                <figcaption>Oluşturulan Görsel</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Yapay Zeka Görsel Üretici</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
